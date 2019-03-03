@@ -9,15 +9,17 @@ There is 3 reasons why I made that
 Well yes but actually no, after Spotify put ads into webplayer I decided make an another program (or webpage whatever you call) to block ads. If one of them playing program sets volume to zero to prevent listening these annoying ads.
 
 #### Installation
-Simply clone this repo and open `index.html` at your browser.
+1. Option: https://fklc.github.io/AdlessSpotifyPlayer/
+2. Option: Clone this repo and open `index.html` at your browser.
+
 
 #### Usage
-1. Open `index.html`
+1. Open `index.html` or https://fklc.github.io/AdlessSpotifyPlayer/
 2. Navigate [here](https://developer.spotify.com/documentation/web-playback-sdk/quick-start/#authenticating-with-spotify) to get access token from Spotify site
 3. Click on `Get Your Web Playback SDK Access Token`
 4. Agree app access (since it is official Spotify app I can't access that so feel free to use it)
 5. When Spotify redirect you to old page again there is should be access token appeared copy that
-6. Paste into page you opened at first (`index.html`) and click `Connect`
+6. Paste into page you opened at first and click `Connect`
 7. On one of the your devices click to `Connect to a device` and select `Adless Spotify Player`
 8. That's all start listening
 
