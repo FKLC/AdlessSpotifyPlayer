@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Adless Spotify Player</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/skeleton.css">
+
+</head>
+<body>
+
+  <div class="container" style="margin-top: 6rem">
+    <h4>Adless Spotify Player</h4>
+    <div id="view"></div>
+    <small>Status: <b id="status">Waiting</b></small>
+  </div>
+
+  <template id="connect-template">
+    <label for="token">Spotify Token <small>(You Can Get One <a href="https://developer.spotify.com/documentation/web-playback-sdk/quick-start/#authenticating-with-spotify" target="_blank">Here</a></small>)</label>
+    <input class="u-full-width" type="text" placeholder="Token" id="token">
+    <button class="button-primary u-full-width" onclick="connect()" id="connect-button" disabled>Connect</button>
+  </template>
+
+  <template id="controller-template">
+    <div class="row">
+      <div class="four columns">
+        <img class="u-full-width" id="album-image">
+      </div>
+      <div class="eight columns">
+        <h4 id="music-name"></h4>
+        <small id="artist-name"></small>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns">
+        <button class="button-primary u-full-width" onclick="player.previousTrack()">&larr;</button>
+      </div>
+      <div class="four columns">
+        <button class="button-primary u-full-width" onclick="player.togglePlay()" id="toggle-button"></button>
+      </div>
+      <div class="four columns">
+        <button class="button-primary u-full-width" onclick="player.nextTrack()">&rarr;</button>
+      </div>
+    </div>
+  </template>
+
+  <script src="js/main.js"></script>
+  <script src="https://sdk.scdn.co/spotify-player.js"></script>
+
+</body>
+</html>
