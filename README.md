@@ -1,4 +1,6 @@
 # Adless Spotify Player
+Seems to be not working anymore but since I didn't made any change I guess cause of the error is Spotify's changes. Due that I don't really happy with this project I'm not going to update/fix but if would like to fix whatever the error is you can always open PR, I'm not going to archive this project.
+
 #### Why I Made That?
 There is 3 reasons why I made that
   1. Because I'm a high school student and Spotify haven't got any plans for us.
